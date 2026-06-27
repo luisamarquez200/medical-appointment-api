@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2026-06-26T21:14:42-0500",
-    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.46.100.v20260624-0231, environment: Java 21.0.11 (Eclipse Adoptium)"
+    date = "2026-06-26T21:46:43-0500",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 23.0.1 (Homebrew)"
 )
 @Component
 public class AppointmentPersistenceMapperImpl implements AppointmentPersistenceMapper {
@@ -21,9 +21,9 @@ public class AppointmentPersistenceMapperImpl implements AppointmentPersistenceM
 
         AppointmentJpaEntity.AppointmentJpaEntityBuilder appointmentJpaEntity = AppointmentJpaEntity.builder();
 
+        appointmentJpaEntity.status( appointment.getStatus() );
         appointmentJpaEntity.cancelledAt( appointment.getCancelledAt() );
         appointmentJpaEntity.createdAt( appointment.getCreatedAt() );
-        appointmentJpaEntity.status( appointment.getStatus() );
         appointmentJpaEntity.updatedAt( appointment.getUpdatedAt() );
 
         appointmentJpaEntity.id( appointment.getId().value() );

@@ -99,14 +99,14 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            
+            <scope>test</scope>
         </dependency>
 
         <!-- H2 — base de datos en memoria para tests unitarios -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            
+            <scope>test</scope>
         </dependency>
 
         <!-- Testcontainers — tests de integración con PostgreSQL real -->
@@ -114,13 +114,21 @@
             <groupId>org.testcontainers</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>${testcontainers.version}</version>
-            
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>postgresql</artifactId>
             <version>${testcontainers.version}</version>
-            
+            <scope>test</scope>
+        </dependency>
+
+        <!-- ArchUnit - Pruebas de Arquitectura -->
+        <dependency>
+            <groupId>com.tngtech.archunit</groupId>
+            <artifactId>archunit-junit5</artifactId>
+            <version>1.2.1</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

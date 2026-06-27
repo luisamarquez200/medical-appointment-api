@@ -1,4 +1,5 @@
 com/medisalud/application/appointment/CancelAppointmentUseCaseTest.class
+com/medisalud/presentation/appointment/AppointmentControllerTest.class
 com/medisalud/application/appointment/CreateAppointmentUseCaseTest$ExistenceValidation.class
 com/medisalud/application/appointment/CreateAppointmentUseCaseTest.class
 com/medisalud/domain/appointment/AppointmentTest.class
@@ -9,11 +10,13 @@ com/medisalud/application/appointment/CreateAppointmentUseCaseTest$HappyPath.cla
 com/medisalud/application/appointment/CancelAppointmentUseCaseTest$HappyPath.class
 com/medisalud/application/appointment/CreateAppointmentUseCaseTest$DoctorConflict.class
 com/medisalud/domain/appointment/service/TimeSlotValidatorServiceTest$ValidSlots.class
+com/medisalud/architecture/CleanArchitectureTest.class
 com/medisalud/application/appointment/CancelAppointmentUseCaseTest$ErrorCases.class
 com/medisalud/domain/appointment/AppointmentTest$Cancellation.class
 com/medisalud/application/appointment/CreateAppointmentUseCaseTest$WorkingHoursValidation.class
 com/medisalud/domain/appointment/service/TimeSlotValidatorServiceTest$InvalidSlotBoundary.class
 com/medisalud/domain/appointment/service/TimeSlotValidatorServiceTest$Sunday.class
+com/medisalud/infrastructure/appointment/persistence/AppointmentJpaRepositoryIT.class
 com/medisalud/domain/appointment/AppointmentTest$Creation.class
 com/medisalud/domain/appointment/AppointmentTest$LateCancellation.class
 com/medisalud/domain/appointment/service/TimeSlotValidatorServiceTest.class

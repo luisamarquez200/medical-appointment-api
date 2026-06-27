@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2026-06-26T21:14:42-0500",
-    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.46.100.v20260624-0231, environment: Java 21.0.11 (Eclipse Adoptium)"
+    date = "2026-06-26T21:46:43-0500",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 23.0.1 (Homebrew)"
 )
 @Component
 public class DoctorPersistenceMapperImpl implements DoctorPersistenceMapper {
@@ -21,11 +21,11 @@ public class DoctorPersistenceMapperImpl implements DoctorPersistenceMapper {
 
         DoctorJpaEntity.DoctorJpaEntityBuilder doctorJpaEntity = DoctorJpaEntity.builder();
 
-        doctorJpaEntity.createdAt( doctor.getCreatedAt() );
-        doctorJpaEntity.email( doctor.getEmail() );
         doctorJpaEntity.fullName( doctor.getFullName() );
-        doctorJpaEntity.phone( doctor.getPhone() );
         doctorJpaEntity.specialty( doctor.getSpecialty() );
+        doctorJpaEntity.phone( doctor.getPhone() );
+        doctorJpaEntity.email( doctor.getEmail() );
+        doctorJpaEntity.createdAt( doctor.getCreatedAt() );
         doctorJpaEntity.updatedAt( doctor.getUpdatedAt() );
 
         doctorJpaEntity.id( doctor.getId().value() );
