@@ -46,3 +46,4 @@ logging:
   level:
     com.medisalud: INFO
     org.hibernate.SQL: WARN
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
