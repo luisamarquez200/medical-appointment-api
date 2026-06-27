@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: medisalud_db
+    environment:
+      POSTGRES_USER: medisalud
+      POSTGRES_PASSWORD: medisalud
+      POSTGRES_DB: medisalud
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
